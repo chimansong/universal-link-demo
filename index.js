@@ -12,5 +12,6 @@ server.get('/home', function(request, response) {
 server.get('/about', function(request, response) {
   response.sendFile(__dirname +  '/about.html');
 });
+const port = process.env.PORT || 3000;
 
-server.listen(800);
+server.listen(port);
