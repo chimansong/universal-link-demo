@@ -11,5 +11,6 @@
   "main": "index.js",
   "author": "Chiman Song",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "start": "node index.js"
 }
