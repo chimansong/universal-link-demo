@@ -14,15 +14,15 @@ server.get('/about', function(request, response) {
   response.sendFile(__dirname +  '/about.html');
 });
 
-server.get('/goods/*', function(request, response) {
+server.get('/goods*', function(request, response) {
   response.sendFile(__dirname +  '/goods.html');
 });
 
-server.get('/collections/*', function(request, response) {
+server.get('/collections*', function(request, response) {
   response.sendFile(__dirname +  '/collections.html');
 });
 
-server.get('/categories/*', function(request, response) {
+server.get('/categories*', function(request, response) {
   response.sendFile(__dirname +  '/categories.html');
 });
 
