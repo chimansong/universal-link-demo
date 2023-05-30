@@ -7,7 +7,7 @@ server.get('/apple-app-site-association', function(request, response) {
 });
 
 server.get('/home', function(request, response) {
-  console.log('hit /home');
+  console.log(`hit /home : ${__dirname}`);
   response.sendFile(__dirname +  '/home.html');
 });
 
@@ -32,3 +32,5 @@ const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+module.exports = app;
