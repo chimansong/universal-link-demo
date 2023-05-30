@@ -7,11 +7,11 @@ server.get('/apple-app-site-association', function(request, response) {
 });
 
 server.get('/home', function(request, response) {
-  response.sendFile(__dirname +  '/home.html');
+  response.redirect(__dirname +  '/home.html');
 });
 
 server.get('/about', function(request, response) {
-  response.sendFile(__dirname +  '/about.html');
+  response.redirect(__dirname +  '/about.html');
 });
 
 server.get('/goods*', function(request, response) {
