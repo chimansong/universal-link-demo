@@ -6,6 +6,11 @@ server.get('/apple-app-site-association', function(request, response) {
   response.sendFile(__dirname +  '/apple-app-site-association');
 });
 
+server.get('/api/home', function(request, response) {
+  console.log(`hit /home : ${__dirname}`);
+  response.sendFile(__dirname +  '/home.html');
+});
+
 server.get('/home', function(request, response) {
   console.log(`hit /home : ${__dirname}`);
   response.sendFile(__dirname +  '/home.html');
