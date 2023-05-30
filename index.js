@@ -15,7 +15,7 @@ server.get('/about', function(request, response) {
 });
 
 server.get('/goods*', function(request, response) {
-  response.sendFile(__dirname +  '/goods.html');
+  response.redirect('/goods.html');
 });
 
 server.get('/collections*', function(request, response) {
